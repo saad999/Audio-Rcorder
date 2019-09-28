@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/fd_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/record_progress_bar_background"
+            android:visibility="invisible"
+            />
+        <Chronometer
+            android:background="@drawable/record_progress_bar"
+            android:id="@+id/chronometer"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/frame"
+        android:id="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:layout_below="@id/frame"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/fab_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_mic_white_36dp" />
+
+    <Button
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:drawableLeft="@drawable/cancel"
+        android:text="@string/cancel_recording_button"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
